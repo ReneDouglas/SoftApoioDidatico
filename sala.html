@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+
+	<style type="text/css">
+		#topo{
+			width: 80%;
+			height: 70px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#999;
+			clear:both;
+			}
+		#topo ul{
+			float:left;
+			margin-top:20px;
+			}	
+		#topo ul li{
+			display:inline;
+			float:left;
+			margin-left:30px;
+			margin-right:50px;
+			}
+		#logout{
+			float:right;
+			margin-right:50px;
+			margin-top:20px;
+			}	
+		#site{
+			width:80%;
+			margin-left:auto;
+			margin-right:auto;
+			}
+		#site #menu{
+			width:20%;
+			float:left;
+			}	
+		#site #sala{
+			width:80%;
+			float:left;
+			}	
+		#menu ul li{
+			margin-top: 5%;
+			margin-bottom: 21.4%;
+			display:block;
+			}
+		#menu fieldset{
+			height: 350px;
+			}	
+		#sala fieldset{
+			height: 350px;
+			}
+		#selec{
+			width:40%;
+			float:left;
+			text-align:center;
+			}
+		#selec1{
+			width:60%;
+			height:100%;
+			float:left;
+			}
+		#selec1 *{
+			margin-bottom:10%;
+			margin-right:10%;
+			}	
+		#sala fieldset form{
+			width:100%;
+			height:100%;
+			text-align:justify;
+			}
+			
+			
+	</style>
+	
+	<script type="text/javascript">
+		function cadastrar(){
+			var mudar = document.getElementById("mudar");
+			mudar.innerHTML = "";
+			var legenda = document.createElement("legend");
+			var form = document.createElement("form");
+			form.setAttribute("method","post");
+			form.setAttribute("style","text-align:center");
+			var sala = document.createElement("input");
+			sala.setAttribute("name","sala");
+			var bloco = document.createElement("input");
+			bloco.setAttribute("name","bloco");
+			var botao = document.createElement("input");
+			botao.setAttribute("type","submit");
+			botao.setAttribute("value","Cadastrar");
+			
+			
+			legenda.innerHTML="<h1>Cadastrar</h1>";
+			
+			mudar.appendChild(legenda);
+			mudar.appendChild(form);
+			form.innerHTML="Sala: ";
+			form.appendChild(sala);
+			form.innerHTML+="bloco: ";
+			form.appendChild(bloco);
+			form.appendChild(botao);
+		}
+		
+		function alocar(){
+			var mudar = document.getElementById("mudar");
+			var text = "<legend><h1>Alocar Sala</h1></legend>";
+			text	+="		<form method='post'>";
+			text	+="				<div id='selec'>";
+			text	+="						<select size='15' name='sala'>";
+			text 	+="							<option>------------------------------------------</option>";
+			text	+="						</select></div><div id='selec1'>";
+			text	+="					Professor: <input type='text' value='' name='professor' size='50' /><br/>";
+			text	+="					Horario Iniciao: <select name='horarioInicio'><option>16:30</option><option>20:10</option></select>";
+			text	+="					Horario termino: <select name='horarioTermino'><option>20:10</option><option>21:50</option></select><br/>";
+			text	+="					Horario Alternativo: <input type='text' name='horario' size='10' value='' />";
+			text	+="					<input type='submit' value='Reserva' name='btnEnviar'/>";
+			text	+="					<a>Pesquisar</a>";
+			text	+="				</div>";
+			text	+="			</form>";
+			mudar.innerHTML=text;
+			}
+	</script>
+</head>
+
+<body onload="javascript:alocar()">
+
+    <div id="topo">
+    	<ul>
+        	<li><a> Sala</a></li>
+            <li><a> Equipamento</a></li>
+            <li><a> Material</a></li>
+    	</ul>
+    	<a id="logout"> Logout</a>  
+    </div>	
+	<div id="site">
+    	<div id="menu">
+        <fieldset>
+        	<legend><h1>Menu</h1></legend>
+        	<ul>
+				<li><a href="javascript:alocar()">Alocar Sala</a></li>
+            	<li><a href="javascript:cadastrar()">Cadastrar</a></li>
+                <li><a>Alterar</a></li>
+                <li><a>Pesquisar</a></li>
+                <li><a>Deletar</a></li>
+            </ul>
+        </fieldset>   
+        </div>
+    	<div id="sala">
+        	<fieldset id="mudar">
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<style type="text/css">
+@import url("app.css/menu.css");
+</style> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cadastro Professor</title>
+</head>
+<body>
+
+<div id='front_menu'>
+	<li><a class='s' href='template.html' title='Início' ><span>Início</span></a></li>
+	<li><a class='s' href='form_administrativo.html' title='Administrativo'><span>Material</span></a></li>
+	<li><a class='s' href='form_professor.html' title='Professor'><span>Equipamento</span></a></li>
+	<li><a class='s' href='form_professor.html' title='Professor'><span>Sala</span></a></li>
+</div>
+
+<div style="left: 450px; width: 176px; position: absolute; top: 50px; height: 105px; widht: 540">
+	<form name=form_professor method="post" action="app.control/gravarForm_prof.php">
+		<table border="1" width="400px" bgcolor="#f0f0f0" style="border-collapse:collapse">
+			<tr>
+				<td valign=top align=center colspan=2 width="140px"><b><font face="Arial"> Cadastro de Professor</font></b></td>
+			</tr>
+			<tr>
+				<td valign=top width="140px"><b><font face="Arial"> Nome:</font></b></td>
+				<td><input name="nome" type="text" size="30"></td>
+			</tr>
+			<tr>
+				<td valign=top width="140px"><b><font face="Arial"> Matricula:</font></b></td>
+				<td><input name="matricula" type="text" size="30"></td>
+			</tr>
+		
+		</table>
+		<input type="reset" value="Limpar">
+		<input type="submit" value="Salvar">
+	</form>
+</div>
+</body>
+</html>

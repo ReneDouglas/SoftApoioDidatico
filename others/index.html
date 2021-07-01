@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Projeto de PBD</title>
+</head>
+	<style type="text/css">
+		@import url("app.css/menu.css");
+		</style> 
+</head>
+
+<body>
+
+    <div id="topo">
+    	<ul>
+        	<li><a id="sala"> Sala</a></li>
+            <li><a id="sala"> Equipamento</a></li>
+            <li><a id="sala"> Material</a></li>
+    	</ul>
+    	<a id="logout"> Logout</a>  
+    </div>	
+<div id="site">
+    	<div id="menu">
+        <fieldset>
+        	<legend><h1>Menu</h1></legend>
+        	<ul>
+            	<li><a>Cadastrar</a></li>
+                <li><a>Alterar</a></li>
+                <li><a>Pesquisar</a></li>
+                <li><a>Deletar</a></li>
+            </ul>
+        </fieldset>   
+        </div>
+    	<div id="sala">
+        	<fieldset>
+            	<legend><h1>Alocar Sala</h1></legend>
+            	<form>
+                	<div id="selec">
+           			<select size="15">
+            			<option>------------------------------------------</option>          
+           			</select>
+                    </div>
+                    <div id="selec1">
+                        Professor: <input type="text" value="" name="professor" size="50" /><br/>
+                        Horario Inicio: <select name="horarioInicio">
+                                            <option>16:30</option>
+                                            <option>20:10</option>
+                                        </select>
+                        Horario termino: <select name="horarioTermino">
+                                            <option>20:10</option>
+                                            <option>21:50</option>
+                                        </select><br/>
+                        Horario Alternativo: <input type="text" name="horario" size="10" value="" />               
+                        <input type="submit" value="Reserva" name="btnEnviar"  />
+                        <a>Pesquisar</a>
+                    </div>
+            	</form>
+            </fieldset>
+            <fieldset id="salasAloc">
+            	<legend>Salas alocadas</legend>
+                    <table border=1>
+                        <tr>
+                            <th>Sala</th>
+                            <th>Bloco</th>
+                            <th>Professor</th>
+                            <th>Horario Inicio</th>
+                            <th>Horario Termino</th>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>2</td>
+                            <td>fulano de tal</td>
+                            <td>16:30</td>
+                            <td>21:50</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>1</td>
+                            <td>fulano de tal</td>
+                            <td>16:30</td>
+                            <td>21:50</td>
+                        </tr>
+                    </table>
+                <input type="button" value="Alguma coisa"/>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
+
+
+</body>
+</html>

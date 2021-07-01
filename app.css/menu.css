@@ -1,0 +1,75 @@
+@CHARSET "ISO-8859-1";
+
+		#topo{
+			width: 80%;
+			height: 70px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#999;
+			clear:both;
+			}
+		#topo ul{
+			float:left;
+			margin-top:20px;
+			}	
+		#topo ul li{
+			display:inline;
+			float:left;
+			margin-left:30px;
+			margin-right:50px;
+			}
+		#logout{
+			float:right;
+			margin-right:50px;
+			margin-top:20px;
+			}	
+		#site{
+			width:80%;
+			margin-left:auto;
+			margin-right:auto;
+			}
+		#site #menu{
+			width:20%;
+			height: 250px;
+			float:left;
+			}	
+		#site #salaEsp{
+			width:80%;
+			height:250px;
+			float:left;
+			}	
+		#menu ul li{
+			margin-top: 20%;
+			margin-bottom: 24.5%;
+			display:block;
+			}
+		#menu fieldset{
+			height: 60%;
+			}
+		#sala{
+			}	
+		#sala fieldset{
+			height: 60%;
+			}
+		#selec{
+			width:40%;
+			float:left;
+			text-align:center;
+			}
+		#selec1{
+			width:60%;
+			height:100%;
+			float:left;
+			}
+		#selec1 *{
+			margin-bottom:10%;
+			margin-right:10%;
+			}	
+		#sala fieldset form{
+			width:100%;
+			height:100%;
+			}
+		#salasAloc{
+			text-align:center;
+			display:none;
+			}

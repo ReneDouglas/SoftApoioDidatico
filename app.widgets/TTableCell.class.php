@@ -1,0 +1,20 @@
+<?php
+/**
+ * classe TTableCell
+ * reponsável pela exibição de uma célula de uma tabela
+ */
+class TTableCell extends TElement
+{
+    /**
+     * método construtor
+     * instancia uma nova célula
+     * @param $value = conteúdo da célula
+     */
+    public function __construct($value, $header=false)
+    {
+        $str = $header? 'th' : 'td';
+		parent::__construct($str);
+        parent::add($value);
+    }
+}
+?>
